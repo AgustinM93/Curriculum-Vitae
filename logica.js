@@ -1,8 +1,8 @@
 function chooseLanguage(language) {
     if (language === 'es') {
-        window.location.href = "curriculum-es.html"; // Redirige a la versión en español
+        window.location.href = "cv-es.html"; // Redirige a la versión en español
     } else if (language === 'en') {
-        window.location.href = "curriculum-en.html"; // Redirige a la versión en inglés
+        window.location.href = "cv-en.html"; // Redirige a la versión en inglés
     }
 }
 
