@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *
+
 { 
     margin:0;
     padding:0;
@@ -255,4 +256,49 @@ background: #16aba8;
     width: 20px;
 }
 
-  
+/* Estilo para el fondo de la ventana modal */
+.languageModal {
+    background: #003147;
+    display: block; /* Mostrar modal por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;   
+}
+
+/* Estilo para el contenido de la ventana modal */
+.modal-content {
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #16aba8;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Estilo para los botones */
+.modal-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal-button:hover {
+    background-color: #fff;
+}
+
+#welcomeText {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 1100; /* Asegura que esté encima del modal */
+}
