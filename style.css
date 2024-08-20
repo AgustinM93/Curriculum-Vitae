@@ -259,46 +259,70 @@ background: #16aba8;
 /* Estilo para el fondo de la ventana modal */
 .languageModal {
     background: #003147;
-    display: block; /* Mostrar modal por defecto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;   
+    height: 100%;
+    flex-direction: column; /* Permite la colocación vertical de elementos */
 }
 
 /* Estilo para el contenido de la ventana modal */
 .modal-content {
-    position: relative;
-    margin: 15% auto;
     padding: 20px;
     width: 80%;
-    max-width: 600px;
+    max-width: 400px;
     background-color: #16aba8;
     border-radius: 5px;
     text-align: center;
+    margin-top: 0; /* Empuja el modal hacia la parte inferior */
+    margin-bottom: 20px; /* Espacio desde el borde inferior */
 }
 
 /* Estilo para los botones */
 .modal-button {
-    margin: 10px;
+    display: block;
+    margin: 10px auto;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    width: 80%; /* Para que los botones ocupen el 80% del ancho disponible */
 }
 
 .modal-button:hover {
     background-color: #fff;
 }
 
+/* Ajuste del texto de bienvenida */
 #welcomeText {
-    position: absolute;
-    top: 10%;
+    position: fixed;
+    top: 10px; /* Espacio desde el borde superior */
     width: 100%;
     text-align: center;
     color: #fff;
-    z-index: 1100; /* Asegura que esté encima del modal */
+    z-index: 1100;
+    padding: 0 10px; /* Añadir padding para asegurarse de que el texto no toque los bordes */
+    font-size: 1.5rem;
 }
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Ajustar el tamaño del modal en pantallas más pequeñas */
+    }
+
+    .modal-button {
+        width: 100%; /* Hacer que los botones ocupen el 100% del ancho del modal en móviles */
+    }
+
+    #welcomeText {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto para pantallas pequeñas */
+    }
+}
+
