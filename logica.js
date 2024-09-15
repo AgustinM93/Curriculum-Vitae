@@ -18,3 +18,18 @@ function direccionarMail(){
     location.href = "mailto:agusstincho93@gmail.com";
 }
 
+function descargarCV(bo){
+    const element = bo;
+
+            // Configuración de html2pdf
+            const options = {
+                margin: 0,
+                filename: 'RodrigoAgustinMiguelCV.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, logging: true, dpi: 192, letterRendering: true },
+                jsPDF: { unit: 'in', format: 'a3', orientation: 'portrait' }
+            };
+
+            // Genera y descarga el PDF
+            html2pdf().from(element).set(options).save();
+}

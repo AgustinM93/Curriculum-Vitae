@@ -34,6 +34,7 @@ body
     background: #16aba8;
     padding: 40px;
 }
+
 .profileText
 {
     position: relative;
@@ -70,6 +71,24 @@ body
     text-align: center;
     font-weight: 600;
     line-height: 1.5em;
+}
+
+.cvbutton {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#downloadPDF{
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 .profileText h2 span
 {
@@ -310,6 +329,7 @@ background: #16aba8;
     padding: 0 10px; /* Añadir padding para asegurarse de que el texto no toque los bordes */
     font-size: 1.5rem;
 }
+
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {

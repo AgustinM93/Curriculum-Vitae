@@ -12,13 +12,20 @@
 </head>
 <body>
     <script src="logica.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
     <div class="container">
         <div class="left_Side">
             <div class="profileText">
                 <div class="imgBx">
                     <img src="FotoPerfil.JPG">
                 </div>
-                <h2>Rodrigo Agustín Miguel<br><span> <br> Futuro Ingeniero en Computación</span></h2>
+                <h2>Rodrigo Agustín Miguel<br>
+                <div class="cvbutton">   
+                    <script>const element = document.body;</script>
+                    <button id="downloadPDF" onclick="descargarCV(element)">Descargar CV</button>    
+                </div>
+                <span>Futuro Ingeniero en Computación</span></h2>
+                
             </div>
             <div class="contactInfo">
             <h3 class="title">Datos de contacto</h3>
