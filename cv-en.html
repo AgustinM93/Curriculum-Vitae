@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae Rodrigo Agustín Miguel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-    img { max-width: 100%; height: auto;}
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -21,165 +27,140 @@
                     <img src="FotoPerfil.JPG">
                 </div>
                 <h2>Rodrigo Agustín Miguel<br>
-                    <div class="cvbutton">   
+                    <div class="cvbutton">
                         <script>const element = document.body;</script>
-                        <button id="downloadPDF" onclick="descargarCV(element)">Download CV</button>    
+                        <button id="downloadPDF" onclick="descargarCV(element)">Download CV</button>
                     </div>
-                    <span>Future Computer Engineer</span></h2>
+                    <span>Computer Engineer</span>
+                </h2>
             </div>
             <div class="contactInfo">
-            <h3 class="title">Contact details</h3>
-            <ul>
-                <li>
-                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                    <span class="text" onclick="direccionarWP()">(2920) 546244</span>
-                </li>
-                <li>
-                    <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                    <span class="text" onclick="direccionarMail()">agusstincho93@gmail.com</span>
-                </li>
+                <h3 class="title">Contact details</h3>
+                <ul>
+                    <li class="mail-item">
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span id="textStyle" class="text"
+                            onclick="direccionarMail()">miguelrodrigoagustin@gmail.com</span>
+                    </li>
+
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span id="textStyle" class="text" onclick="direccionarLI()">Rodrigo Agustin Miguel</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contactInfo education">
+                <h3 class="title">EDUCATION</h3>
+                <ul>
+                    <li>
+                        <h5>2016 - 2025</h5>
+                        <h4>Computer Engineering</h4>
+                        <h4>Universidad Nacional del Súr </h4>
+                    </li>
+                    <li>
+                        <h5>2005 - 2011</h5>
+                        <h4>Electromechanical Technician</h4>
+                        <h4>CET N°6, Viedma</h4>
+                    </li>
+                    <li>
+                        <h5>2003 - 2009</h5>
+                        <h4>Approved until 5to Senior</h4>
+                        <h4>Saint Thomas More Institute, Viedma</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="contactInfo language">
+                <h3 class="title">LANGUAGE</h3>
+                <ul>
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percent"></span>
+                        <div style="width: 100%;"></div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="right_Side">
+            <div class="about">
+                <h2 class="title2">About me</h2>
+                <p>I consider myself a responsible, committed, and passionate person, eager to put into practice the
+                    knowledge I have acquired during my university studies.
+                    I have already completed my degree in Computer Engineering at the Universidad Nacional del Sur
+                    (UNS) and I am currently waiting to receive my diploma. Throughout this journey, I have gained a
+                    strong foundation in this field.
+                    I am motivated by the idea of being part of a dynamic and collaborative team, where I can continue
+                    learning and growing professionally. I am excited to contribute my skills and gain new experiences
+                    in a challenging environment.</p>
+            </div>
+            <div class="about">
+                <h2 class="title2">Experience</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2025 - Presente</h5>
+                        <h5>CODIMAT S.A</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Fullstack Developer</h4>
+                        <p>I am currently working as a full-stack developer, but I am seeking new opportunities and
+                            directions for my career.</p>
+                    </div>
+                    <div class="year_company">
+                        <h5>2024 - 2025</h5>
+                        <h5>CODIMAT S.A</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Student Intern</h4>
+                        <p>I joined Codimat S.A. as a Full-Stack Developer Intern, contributing to the design,
+                            development, and maintenance of internal web applications. I worked with technologies such
+                            as Java, JavaScript, SQL Server, PostgreSQL, XML, jQuery, CSS/Bootstrap, DOM/Ajax, Apache
+                            Tomcat, and GitLab, collaborating with the development team to improve system performance
+                            and user experience.</p>
+                    </div>
+                    <div class="year_company">
+                        <h5>2016 - 2025</h5>
+                        <h5>Universidad Nacional del Sur</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Computer Engineering Student</h4>
+                        <p>Worked on various academic and personal projects involving Java, JavaScript, C/C++,
+                            React/React Native, Python, SQL (MariaDB), Arduino, HTML, CSS, Git, Docker, Postman, Newman,
+                            JMeter, and Selenium, gaining experience in both software development and testing.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="about skills">
                 
-                <li>
-                    <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-                    <span class="text" onclick="direccionarLI()">Rodrigo Agustin Miguel</span>
-                </li>
-                
-            </ul>
-        </div>
-        <div class="contactInfo education">
-            <h3 class="title">EDUCATION</h3>
-            <ul>
-                <li>
-                   <h5>2016 - Present</h5>
-                   <h4>Computer Engineering</h4>
-                   <h4>Universidad Nacional del Súr </h4>
-                </li>
-                <li>
-                    <h5>2005 - 2011</h5>
-                    <h4>Electromechanical Technician</h4>
-                    <h4>CET N°6, Viedma</h4>
-                 </li>
-                 <li>
-                    <h5>2003 - 2009</h5>
-                    <h4>Approved until 5to Senior</h4>
-                    <h4>Saint Thomas More Institute, Viedma</h4>
-                 </li>
-            </ul>
-        </div>
-        <div class="contactInfo language">
-            <h3 class="title">LANGUAGE</h3>
-            <ul>
-                <li>
-                    <span class="text">English</span>
-                    <span class="percent"></span>
-                    <div style="width: 90%;"></div>
-                </li>
-                
-            </ul>
-        </div>
-    </div>
-  <div class="right_Side">
-  <div class="about">
-    <h2 class="title2">About me</h2>
-    <p>I consider myself a responsible, committed, and passionate person, eager to apply the knowledge acquired during my 
-        university education. I have already completed the coursework for my degree in Computer Engineering at UNS, and I 
-        only need to complete the internship and final project. During this process, I have developed a solid foundation 
-        in this field. I am motivated by the idea of being part of a dynamic and collaborative team, where I can continue 
-        learning and growing professionally. I am excited to contribute my skills and gain new experiences in a challenging 
-        environment.</p>
-  </div>
-  <div class="about">
-    <h2 class="title2">Experience</h2>
-    <div class="box">
-        <div class="year_company">
-            <h5>2016 - Present</h5>
-            <h5>Universidad Nacional del Sur</h5>
-        </div>
-        <div class="text">
-            <h4>Engineering Student</h4>
-            <p>Throughout my time at university, we completed many projects for various courses. 
-                For example, in courses like Operating Systems, Databases, Networks and Teleprocessing, 
-                Embedded Systems, System Security, Software Testing, etc.</p>
-        </div>
-    </div>
-  
-</div>
-    <div class="about skills">
-    <h2 class="title2">Technologies</h2>
+                <div class="about">
+                    <h2 class="title3">Extracurricular Activities</h2>
+                    <div class="box">
+                        <div class="year_company">
+                            <h5>2020 - 2020</h5>
+                            <h5>Own</h5>
+                        </div>
+                        <div class="text">
+                            <h4>Placement of surveillance cameras </h4>
+                            <p>Security cameras were installed in Bahía San Blas, Buenos Aires.</p>
+                        </div>
+                    </div>
 
-    <div class="box">
-        <h4>JAVA</h4>
-        <div class="percent">
-            <div style="width:96%;"></div>
-        </div>
-    </div>
-    <div class="box">
-        <h4>JAVASCRIPT</h4>
-        <div class="percent">
-        <div style="width: 95%;"></div>
-    </div>
-    </div>
-    <div class="box">
-        <h4>C/C++</h4>
-        <div class="percent">
-            <div style="width:80%;"></div>
-        </div>
-    </div>
-    <div class="box">
-        <h4>SQL</h4>
-        <div class="percent">
-            <div style="width:80%;"></div>
-        </div>
-    </div>
-    <div class="box">
-    <h4>Html</h4>
-    <div class="percent">
-    <div style="width:75%;"></div>
-</div>
-</div>
-
-<div class="box">
-    <h4>CSS</h4>
-    <div class="percent">
-    <div style="width: 75%;"></div>
-</div>
-</div>
-
-<div class="box">
-    <h4>PYTHON</h4>
-    <div class="percent">
-        <div style="width:96%;"></div>
-    </div>
-</div>
-
-<div class="about">
-    <h2 class="title3">Extracurricular Activities</h2>
-    <div class="box">
-        <div class="year_company">
-            <h5>2020 - 2020</h5>
-            <h5>Own</h5>
-        </div>
-        <div class="text">
-            <h4>Placement of surveillance cameras </h4>
-            <p>Security cameras were installed in Bahía San Blas, Buenos Aires.</p>
-        </div>
-    </div>
-  
-</div>
+                </div>
 
 
-</div>
-<div class="About interest">
-    <h2 class="title2">Interests</h2>
-    <ul>
-        <li><i class="fa fa-laptop" aria-hidden="true"></i>Developing</li>
-        <li><i class="fa fa-gamepad" aria-hidden="true"></i>Gaming</li>
-    </ul>
-</div>
+            </div>
+            <div class="About interest">
+                <h2 class="title2">Interests</h2>
+                <ul>
+                    <li><i class="fa fa-laptop" aria-hidden="true"></i>Developing</li>
+                    <li><i class="fa fa-gamepad" aria-hidden="true"></i>Gaming</li>
+                </ul>
+            </div>
 
-</div>
-</div>
+        </div>
+    </div>
 
-    
+
 </body>
+
 </html>
