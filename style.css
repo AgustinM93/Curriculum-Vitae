@@ -1,60 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*
 
-{ 
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 
 }
-body
-{
+
+body {
     background: #003147;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height:100vh;
+    min-height: 100vh;
 }
-.container
-{
+
+.container {
     position: relative;
     width: 100%;
     max-width: 1000px;
     min-height: 1000px;
     background: #fff;
-    margin:50px;
+    margin: 50px;
     display: grid;
-    grid-template-columns: 1fr 2fr ;
+    grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(211, 68, 68, 0.1);
 }
-.container .left_Side
-{
+
+.container .left_Side {
     position: relative;
     background: #16aba8;
     padding: 40px;
 }
 
-.profileText
-{
+.profileText {
     position: relative;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(179, 46, 46, 0.2);
 }
-.profileText .imgBx
-{
-    position:relative;
+
+.profileText .imgBx {
+    position: relative;
     width: 250px;
-    height:270px;
+    height: 270px;
     border-radius: 60%;
-    overflow:hidden;
+    overflow: hidden;
 
 }
-.profileText .imgBx img
-{
+
+.profileText .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -62,8 +60,8 @@ body
     height: 100%;
     object-fit: cover;
 }
-.profileText h2
-{
+
+.profileText h2 {
     color: #003147;
     font-size: 1.7em;
     margin-top: 20px;
@@ -78,7 +76,7 @@ body
     text-align: center;
 }
 
-#downloadPDF{
+#downloadPDF {
     display: block;
     margin: 10px auto;
     padding: 10px 20px;
@@ -90,18 +88,18 @@ body
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.profileText h2 span
-{
+
+.profileText h2 span {
     color: #003147;
     font-size: 0.7em;
     font-style: 200;
 }
-.contactInfo
-{
-    padding-top: 40px ;
+
+.contactInfo {
+    padding-top: 40px;
 }
-.title
-{
+
+.title {
     color: #0a0a0a;
     text-transform: uppercase;
     font-weight: 600;
@@ -110,52 +108,51 @@ body
 
 }
 
-.contactInfo ul
-{
-position: relative;
+.contactInfo ul {
+    position: relative;
 }
-.contactInfo ul li
-{
-position: relative;
-list-style: none;
-margin: 10px 0;
-cursor: pointer;
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
 }
-.contactInfo ul li .icon
-{
+
+.contactInfo ul li .icon {
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: #ff0004;
 }
-.contactInfo ul li span
-{
+
+.contactInfo ul li span {
     color: rgb(0, 7, 2);
     font-weight: 300;
 }
-.contactInfo.education li
-{
-margin-bottom: 15px;
+
+.contactInfo.education li {
+    margin-bottom: 15px;
 
 }
-.contactInfo.education h5
-{
+
+.contactInfo.education h5 {
     color: #ff0004;
     font-weight: 650;
 }
-.contactInfo.education h4
-{
+
+.contactInfo.education h4 {
     color: rgb(49, 49, 49);
     font-weight: 300;
 }
-.contactInfo.education h4:nth-child(2)
-{
-/*color: rgb(49, 49, 49);*/
-color: rgb(0, 7, 1);
-font-weight: 500;
+
+.contactInfo.education h4:nth-child(2) {
+    /*color: rgb(49, 49, 49);*/
+    color: rgb(0, 7, 1);
+    font-weight: 500;
 }
-.contactInfo.language .percent
-{
+
+.contactInfo.language .percent {
     position: relative;
     width: 100%;
     height: 6px;
@@ -163,113 +160,124 @@ font-weight: 500;
     display: block;
     margin-top: 5px;
 }
-.contactInfo.language .percent div
-{
+
+.contactInfo.language .percent div {
     position: absolute;
     top: 0;
     left: 0;
     height: 50%;
     background: rgb(148, 8, 8);
 }
-.container .right_Side
-{
+
+.container .right_Side {
     position: relative;
     background: #fff;
     padding: 40px;
 }
-.about 
-{
+
+.about {
     margin-bottom: 20px;
 
 }
-.about:last-child
-{
+
+.about:last-child {
     margin-bottom: 0;
 }
-.title2
-{
-    color:#003147;
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+.title3 {
+    color: #003147;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
-.title3
-{
-    color:#003147;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-p
-{
+
+p {
     color: rgb(7, 0, 0);
     font-size: 18px;
 }
-.about .box
-{
-    display:flex ;
-    flex-direction: row;
-    margin: 20px 0;
+
+.about .box {
+    display: flex;
+    flex-direction: column;
+    /* coloca los hijos uno debajo del otro */
+    gap: 0px;
+    /* espacio entre experiencias */
 }
-.about .box .year_company
-{
-    min-width: 150px;
+
+.about .year_company {
+    color: #777;
+    margin-top: 10px;
 }
-.about .box .year_company h5
-{
-    text-transform: uppercase;
-    color: #848c90;
+
+.about .year_company h5 {
+    margin: 0;
     font-weight: 600;
 }
-.about .box .text h4{
+
+.about .text h4 {
+    color: #009688;
+    /* el color verde azulado que se ve en tu ejemplo */
     text-transform: uppercase;
-    color: #16aba8;
-    font-size: 16px;
+    font-weight: bold;
+    
 }
-.skills .box
-{
+
+.about .text p {
+    text-align: justify;
+    margin: 0;
+}
+
+.skills .box {
     position: relative;
     width: 100%;
-    display:grid;
+    display: grid;
     grid-template-columns: 150px 1fr;
     justify-content: center;
-align-items: center;
+    align-items: center;
 }
-.skills .box h4
-{
+
+.skills .box h4 {
     text-transform: uppercase;
     color: #848c99;
     font-weight: 500;
 
 }
-.skills .box .percent
-{
+
+.skills .box .percent {
     position: relative;
     width: 100%;
     height: 10px;
     background: #c1baba;
 }
-.skills .box .percent div 
-{
-position: absolute;
-top: 0;
-left: 00;
-height: 100%;
-background: #16aba8;
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 00;
+    height: 100%;
+    background: #16aba8;
 }
-.interest ul{
+
+.interest ul {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
-.interest ul li 
-{
+
+.interest ul li {
     list-style: none;
     color: #333;
     font-weight: 500;
     margin: 10px 0;
 }
-.interest ul li .fa 
-{
+
+.interest ul li .fa {
     color: #16aba8;
     font-size: 18px;
     width: 20px;
@@ -287,7 +295,8 @@ background: #16aba8;
     top: 0;
     width: 100%;
     height: 100%;
-    flex-direction: column; /* Permite la colocación vertical de elementos */
+    flex-direction: column;
+    /* Permite la colocación vertical de elementos */
 }
 
 /* Estilo para el contenido de la ventana modal */
@@ -298,8 +307,10 @@ background: #16aba8;
     background-color: #16aba8;
     border-radius: 5px;
     text-align: center;
-    margin-top: 0; /* Empuja el modal hacia la parte inferior */
-    margin-bottom: 20px; /* Espacio desde el borde inferior */
+    margin-top: 0;
+    /* Empuja el modal hacia la parte inferior */
+    margin-bottom: 20px;
+    /* Espacio desde el borde inferior */
 }
 
 /* Estilo para los botones */
@@ -311,7 +322,8 @@ background: #16aba8;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    width: 80%; /* Para que los botones ocupen el 80% del ancho disponible */
+    width: 80%;
+    /* Para que los botones ocupen el 80% del ancho disponible */
 }
 
 .modal-button:hover {
@@ -321,28 +333,49 @@ background: #16aba8;
 /* Ajuste del texto de bienvenida */
 #welcomeText {
     position: fixed;
-    top: 10px; /* Espacio desde el borde superior */
+    top: 80px;
+    /* Espacio desde el borde superior */
     width: 100%;
     text-align: center;
     color: #fff;
     z-index: 1100;
-    padding: 0 10px; /* Añadir padding para asegurarse de que el texto no toque los bordes */
+    padding: 0 10px;
+    /* Añadir padding para asegurarse de que el texto no toque los bordes */
     font-size: 1.5rem;
+}
+
+#textStyle {
+    cursor: pointer;
+    color: #003147;
+    font-weight: 600;
+}
+
+.mail-item {
+    display: flex;
+    align-items: center;
+}
+
+.mail-item .icon {
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
     .modal-content {
-        width: 90%; /* Ajustar el tamaño del modal en pantallas más pequeñas */
+        width: 90%;
+        /* Ajustar el tamaño del modal en pantallas más pequeñas */
     }
 
     .modal-button {
-        width: 100%; /* Hacer que los botones ocupen el 100% del ancho del modal en móviles */
+        width: 100%;
+        /* Hacer que los botones ocupen el 100% del ancho del modal en móviles */
     }
 
     #welcomeText {
-        font-size: 1.2rem; /* Ajustar el tamaño del texto para pantallas pequeñas */
+        font-size: 1.2rem;
+        /* Ajustar el tamaño del texto para pantallas pequeñas */
     }
 }
-
